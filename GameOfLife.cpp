@@ -1,7 +1,3 @@
-/*todo:
-    ranking - a_pocz/a_kon*100%/area
-    cool animation
-*/
 #include <bits/stdc++.h>
 #include <unistd.h>
 #include <chrono>
@@ -304,4 +300,4 @@ int main(){
     return 0;
 }
 
-//g++ GraWZycie.cpp -o GraWZycie
+//g++ GameOfLife.cpp -o GameOfLife
