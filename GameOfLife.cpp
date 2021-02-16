@@ -85,14 +85,14 @@ string menu(){
     return ch;
 }
 
-string loser(){
-    print("Loser.txt");
+string lost(){
+    print("Lost.txt");
     cout<< "    ";
     string i;
     cin>> i;
     i[0]=toupper(i[0]);
     while(i!="A" and i!="E"){
-        print("Loser.txt");
+        print("Lost.txt");
         cout<< "    ";
         cout<< "There is no such option, try again: ";
         cin>> i;
@@ -234,7 +234,7 @@ int gameplay(int x, int y, int G){
     } 
     if(a==0){
         this_thread::sleep_for(2000ms); 
-        if(loser()=="A"){
+        if(lose()=="A"){
             int nr=number_of_cells(x, y, a);
             adding_cells(x, y, nr);
             gameplay(x, y, g);
